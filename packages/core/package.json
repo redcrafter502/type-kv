@@ -1,13 +1,16 @@
 {
   "name": "core",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "ist/index.mjs",
+  "types": "ist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "lint": "tsc"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "tsup": "^8.5.0",
