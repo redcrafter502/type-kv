@@ -1,6 +1,6 @@
 {
   "name": "core",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "module": "ist/index.mjs",
   "types": "ist/index.d.ts",
@@ -13,6 +13,7 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
+    "@changesets/cli": "^2.29.4",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }
