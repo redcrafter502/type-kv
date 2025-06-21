@@ -1,3 +1,3 @@
-export const add = (a: number, b: number): number => {
-  return a + b;
-};
+type Schema = {};
+
+export const table = (name: string, fields: Schema): void => {};
