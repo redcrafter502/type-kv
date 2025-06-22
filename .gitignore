@@ -1,4 +1,5 @@
 /examples/example-01/node_modules
+/examples/example-01/.env
 
 /packages/core/node_modules
 /packages/core/dist
