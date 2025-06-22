@@ -17,10 +17,15 @@ const db = upstashRedisAdapter({
   token: process.env.UPSTASH_REDIS_REST_TOKEN,
 });
 
-await db(usersTable).set("1", {
-  name: "User 1",
-  email: "user1@example.com",
-  age: 27,
-});
-console.log("Between set and get");
-console.log(await db(usersTable).get("1"));
+{
+  const user1 = {
+    name: "User 1",
+    email: "user1@example.com",
+    age: 27,
+  };
+  await db(usersTable).set("1", user1);
+}
+{
+  const user1 = await db(usersTable).get("1");
+  console.log(user1);
+}
