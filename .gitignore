@@ -2,3 +2,6 @@
 
 /packages/core/node_modules
 /packages/core/dist
+
+/packages/upstash-redis/node_modules
+/packages/upstash-redis/dist
