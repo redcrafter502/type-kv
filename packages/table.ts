@@ -1,3 +1,4 @@
+// @ts-expect-error
 import type { StandardSchemaV1 } from "@standard-schema/spec";
 
 export type Table<T extends StandardSchemaV1> = {
